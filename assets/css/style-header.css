@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+}
+body a{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration:none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.navbar.navbar-default {
+    background: #fff;
+    margin: 0;
+    border-top: none;
+	min-height: 40px;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.top-header p{
+    font-size: 0.9em;
+    color: #353F49;
+    line-height: 1.8em;
+    margin-top: .8em;
+    letter-spacing: 1px;
+    font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+.top-header p a{
+    color: #01a185;
+    padding: 0 7px;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	transition:.5s all;
+}
+.top-header p a:hover{
+	color: #33414e;
+}
+
+.social-icons {
+    margin-top: .8em;
+}
+.social-icons ul{
+	margin-top: .8em;
+}
+.social-icons ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+.social-icons ul li a {
+    background: url(../img/social-icons.png)no-repeat -3px -2px;
+    display: block;
+    height: 22px;
+    width: 20px;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    -moz-transition: .5s all;
+    padding: 0;
+}
+.social-icons ul li a.pin {
+    background-position: -3px -38px;
+}
+.social-icons ul li a.in {
+    background-position: -3px -78px;
+}
+.social-icons ul li a.be {
+    background-position: -3px -115px;
+}
+.social-icons ul li a.you {
+    background-position: -3px -154px;
+}
+.social-icons ul li a.vimeo {
+    background-position: -2px -192px;
+}
+.social-icons ul li a:hover{
+	-webkit-transform:rotateY(360deg);
+	transform:rotateY(360deg);
+	-moz-transform:rotateY(360deg);
+	-o-transform:rotateY(360deg);
+	-ms-transform:rotateY(360deg);
+}
+
+
+.header-two .navbar-nav {
+    width: 33%;
+}
+
+.logo {
+    text-align: center;
+}
+.logo h1 {
+    font-size: 3em;
+    margin: 0.6em 0 0.5em;
+    font-weight: 900;
+}
+.logo h1 a {
+    display: inline-block;
+    color: #ff590f;
+    text-decoration: none;
+}
+.logo h1 a b {
+    color: #353F49;
+}
+span.tag {
+    display: block;
+    font-size: .3em;
+    color: #999;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 6px;
+	font-weight: 400;
+}
