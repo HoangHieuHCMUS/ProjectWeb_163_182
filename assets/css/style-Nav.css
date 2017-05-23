@@ -1,0 +1,58 @@
+.navbar.navbar-default {
+    background: #fff;
+    margin: 0;
+    border-top: none;
+    min-height: 40px;
+}
+
+/*--top-nav--*/
+.top-nav nav.navbar {
+    margin: 0;
+    position: relative;
+}
+
+ul.dropdown-menu {
+    -moz-animation: fadeInDown .3s ease-in;
+    -webkit-animation: fadeInDown .3s ease-in;
+/*-- w3layouts --*/
+    animation: fadeInDown .3s ease-in;
+}
+
+ul.nav.navbar-nav.top-nav-info {
+    float: none;
+    text-align: center;
+}
+ul.dropdown-menu.multi-column {
+    width: 100%;
+    padding: 2em;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+    position: inherit;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #33414e;
+    font-size: 1.1em;
+    padding: 1.2em 1.3em;
+    font-weight: 500;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.navbar-default .navbar-nav > li > a.active{
+    color: #FF590F;
+    background: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #FF590F;
+}
+
+b.caret {
+    margin-left: 0.5em;
+}
