@@ -157,7 +157,7 @@ div#bs-megadropdown-tabs {
     padding: 0;
 }
 .h_menu4 {
-    margin-left: 13.6%;
+    margin-left: 6.6%;
 }
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: #01a185;
@@ -276,7 +276,7 @@ a.cart:hover{
 }
 @media(max-width:1220px){
 .h_menu4 {
-    margin-left: 16.6%;
+    margin-left: 13.6%;
 }
 ul.nav_1 li a {
     padding: 1.6em 1.2em;
