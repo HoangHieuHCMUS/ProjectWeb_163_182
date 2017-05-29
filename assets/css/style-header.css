@@ -1,19 +1,25 @@
 
-
 h1,h2,h3,h4,h5,h6,label,p{
     margin:0;    
 }
 
-
 /* ------------------------------------------------------------------------- */
 
 
-body{
+html,body{
     margin:0;
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Raleway', sans-serif;
     background: #fff;
+    height: 100%;
 }
+
+.body-page{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
 body a{
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -449,4 +455,170 @@ ul.nav_1 li {
 }
 @media(max-width:320px){
 
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* #footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+} */
+
+.footer-page{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.footer-top {
+    padding: 60px 0 0 0;
+}
+.footer-grid p {
+    color: #979797;
+    font-size: 13px;
+    line-height: 26px;
+    margin-top: 5px;
+}
+.footer-grid ul li {
+    list-style-type: none;
+    margin: 13px 0;
+}
+.footer-grid ul li a {
+    color: #979797;
+    font-size: 13px;
+    font-weight: 400;
+}
+h4.footer-head {
+    font-size: 20px;
+    color: #01a185;
+    margin-bottom: 5px;
+}
+ul.location {
+    margin-top: 1em;
+}
+ul.location li {
+    float: left;
+    display: inline-block;
+    margin: 0;
+}
+span.glyphicon.glyphicon-map-marker {
+    margin-top: 3px;
+}
+span.glyphicon.glyphicon-map-marker, span.glyphicon.glyphicon-earphone, .glyphicon.glyphicon-envelope {
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(89, 194, 175, 0.68);
+    padding: 6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    vertical-align: top;
+}
+ul.location li:nth-child(2) {
+    float: right;
+    width: 85%;
+    color: #979797;
+    font-size: 0.95em;
+    line-height: 2em;
+    text-transform: lowercase;
+    margin: 0;
+}
+.footer-bottom {
+    padding: 0 0 25px;
+    background: #3c3d41;
+}
+.footer-bottom p {
+    margin: 0px;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-social-icons {
+    margin: 30px 0 0 0;
+}
+.footer-social-icons ul li {
+    display:inline-block;
+    margin:0 0.2em;
+}
+.footer-social-icons ul li a{
+    width:30px;
+    height:30px;
+    background:url('../img/icon-for-footer.png') no-repeat 0px 0px;
+    display:inline-block;
+    position: relative;
+}
+.footer-social-icons ul li a span {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 2px;
+    background: #01a185;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.footer-social-icons ul li a span:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #01a185;
+    position: absolute;
+    bottom: -5px;
+    left: 34px;
+}
+.footer-social-icons ul li a:hover span {
+    bottom: 41px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.footer-social-icons ul li a.facebook {
+    background-position:0px 0px;
+}
+.footer-social-icons ul li a.facebook:hover {
+    background-position:-0px -30px;
+}
+.footer-social-icons ul li a.twitter {
+    background-position:-30px 0px;
+}
+.footer-social-icons ul li a.twitter:hover {
+    background-position:-30px -30px;
+}
+.footer-social-icons ul li a.flickr {
+    background-position:-60px 0px;
+}
+.footer-social-icons ul li a.flickr:hover {
+    background-position:-60px -30px;
+}
+.footer-social-icons ul li a.googleplus {
+    background-position:-90px 0px;
+}
+.footer-social-icons ul li a.googleplus:hover {
+    background-position:-90px -30px;
+}
+.footer-social-icons ul li a.dribbble {
+    background-position:-120px 0px;
+}
+.footer-social-icons ul li a.dribbble:hover {
+    background-position:-120px -30px;
+}
+.footer-social-icons {
+    margin: 40px 0 15px 0;
+}
+.copyrights p {
+    font-size: 13px;
 }
