@@ -140,7 +140,7 @@ position: relative;
 }
 .item-info-product {
 text-align: center;
-margin: 20px 0 0;
+margin: 0;
 }
 .men-thumb-item::before {
 width: 100%;
@@ -292,7 +292,7 @@ color: #FDA30E;
 text-decoration:none;
 }
 .info-product-price {
-margin: 15px 0;
+margin: 8px 0 15px 0;
 }
 .info-product-price span {
 color: #000;
@@ -571,3 +571,425 @@ padding: 0;
 
 }
 /*-- //responsive media queries --*/
+
+.sale-box1 {
+	height: 100px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	width: 100px;
+}
+.sale-box1 span.on_sale {
+	font-family: 'Lato', sans-serif;
+	background: #7DB122;
+	color: #FFF;
+	display: block;
+	left: -35px;
+	font-size: 1em;
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+	top: 23px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 140px;
+	z-index: 2;
+	text-transform:uppercase;
+	border-bottom: 2px solid #6B9C15;
+}
+
+/* ------------------------------------------------------------------ */
+
+.star-rating {
+  font-family: 'FontAwesome';
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+}
+.star-rating > fieldset {
+  border: none;
+  display: inline-block;
+  margin-left: 0;
+}
+.star-rating > fieldset:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+.star-rating > fieldset:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 .05em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 100%;
+  color: #16a085;
+}
+.star-rating > fieldset:not(:checked) > label:before {
+  content: '\f006  ';
+}
+.star-rating > fieldset:not(:checked) > label:hover,
+.star-rating > fieldset:not(:checked) > label:hover ~ label {
+  color: #1abc9c;
+  /* text-shadow: 0 0 3px #1abc9c; */
+}
+.star-rating > fieldset:not(:checked) > label:hover:before,
+.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
+  content: '\f005  ';
+}
+.star-rating > fieldset > input:checked ~ label:before {
+  content: '\f005  ';
+}
+.star-rating > fieldset > label:active {
+  position: relative;
+  top: 2px;
+}
+
+
+/* ---------------------------------------------------------------- */
+.div-of-like-button{
+	display: inline-block;
+	margin-bottom: 20px;
+	float: right;
+	margin-right: 8px;
+}
+
+.middle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* width: 100%; */
+  /* height: 95vh; */
+}
+
+.like-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  /* width: 50%; */
+}
+
+a.like-button{
+	text-decoration: none;
+}
+
+.like-button {
+  border: 2px solid #c7c7c7;
+  border-radius: 40px;
+  padding: .45rem .75rem;
+  color: #878787;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.like-button.liked {
+  text-decoration: none;
+  color: #ff6e6f;
+  border-color: currentColor;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.like-button:hover {
+  	border-color: currentColor;
+}
+
+.like-icon {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  margin-right: .25em;
+  font-size: 1.5rem;
+  background: url("http://share.wojtek.im/ajKY+") no-repeat center;
+  background-size: 100%;
+  -webkit-animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.liked .like-icon {
+  -webkit-animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon [class^="heart-animation-"] {
+  background: url("http://share.wojtek.im/ajKY+") no-repeat center;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 14px;
+  opacity: 0;
+}
+.liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after {
+  content: '';
+  background: inherit;
+  background-size: 100%;
+  width: inherit;
+  height: inherit;
+  display: inherit;
+  position: relative;
+  top: inherit;
+  left: inherit;
+  opacity: 0;
+}
+.liked .like-icon .heart-animation-1 {
+  -webkit-animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-1::before, .liked .like-icon .heart-animation-1::after {
+  width: 12px;
+  height: 10px;
+  visibility: hidden;
+}
+.liked .like-icon .heart-animation-1::before {
+  opacity: .6;
+  -webkit-animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-1::after {
+  -webkit-animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .75;
+}
+.liked .like-icon .heart-animation-2 {
+  -webkit-animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-2::before, .liked .like-icon .heart-animation-2::after {
+  width: 5px;
+  height: 4px;
+  visibility: hidden;
+}
+.liked .like-icon .heart-animation-2::before {
+  -webkit-animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .25;
+}
+.liked .like-icon .heart-animation-2::after {
+  -webkit-animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .4;
+}
+
+@-webkit-keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@-webkit-keyframes heartUnlike {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+@keyframes heartUnlike {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+@-webkit-keyframes heartFloatMain-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg);
+  }
+}
+@keyframes heartFloatMain-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg);
+  }
+}
+@-webkit-keyframes heartFloatMain-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0);
+  }
+  50% {
+    opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1);
+  }
+}
+@keyframes heartFloatMain-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0);
+  }
+  50% {
+    opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1);
+  }
+}
+@-webkit-keyframes heartFloatSub-1 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg);
+  }
+}
+@keyframes heartFloatSub-1 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg);
+  }
+}
+@-webkit-keyframes heartFloatSub-2 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg);
+  }
+}
+@keyframes heartFloatSub-2 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg);
+  }
+}
+@-webkit-keyframes heartFloatSub-3 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(-50px, 0);
+            transform: translate(-50px, 0);
+  }
+}
+@keyframes heartFloatSub-3 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(-50px, 0);
+            transform: translate(-50px, 0);
+  }
+}
+@-webkit-keyframes heartFloatSub-4 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg);
+  }
+}
+@keyframes heartFloatSub-4 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg);
+  }
+}
