@@ -108,7 +108,7 @@ font-weight: 600;
 }
 .resp-tab-active,.resp-tab-item:hover{
 color: #333;
-border-bottom:2px solid #FDA30E;
+border-bottom:2px solid #01a185;
 }
 .resp-tabs-container {
 padding: 0px;
@@ -288,7 +288,7 @@ color: #fff;
 /*-- //effect --*/
 .item-info-product h4 a {
 font-size: 18px;
-color: #FDA30E;
+color: #01a185;
 text-decoration:none;
 }
 .info-product-price {
@@ -633,15 +633,17 @@ padding: 0;
   white-space: nowrap;
   cursor: pointer;
   font-size: 100%;
-  color: #16a085;
+  /* color: #16a085; */
+  color: #FDA30E;
 }
 .star-rating > fieldset:not(:checked) > label:before {
   content: '\f006  ';
 }
 .star-rating > fieldset:not(:checked) > label:hover,
 .star-rating > fieldset:not(:checked) > label:hover ~ label {
-  color: #1abc9c;
+  /* color: #1abc9c; */
   /* text-shadow: 0 0 3px #1abc9c; */
+  color: #FDA30E;
 }
 .star-rating > fieldset:not(:checked) > label:hover:before,
 .star-rating > fieldset:not(:checked) > label:hover ~ label:before {

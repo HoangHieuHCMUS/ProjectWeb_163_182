@@ -468,10 +468,12 @@ ul.nav_1 li {
 
 .footer-page{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     background-color: #fff;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .footer-top {
@@ -621,4 +623,986 @@ ul.location li:nth-child(2) {
 }
 .copyrights p {
     font-size: 13px;
+}
+
+/* Body */
+
+a:hover{
+text-decoration:none;
+}
+input[type="button"],input[type="submit"]{
+transition:0.5s all;
+-webkit-transition:0.5s all;
+-moz-transition:0.5s all;
+-o-transition:0.5s all;
+-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+margin:0;
+font-family: 'Montserrat', sans-serif;
+}
+p{
+margin:0;
+}
+ul{
+margin:0;
+padding:0;
+}
+.hvr-outline-out {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+background: #FDA30E;
+}
+.hvr-outline-out:before {
+content: '';
+position: absolute;
+border: #FDA30E solid 4px;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: top, right, bottom, left;
+transition-property: top, right, bottom, left;
+}
+.hvr-outline-out:hover:before,.hvr-outline-out:focus:before,.hvr-outline-out:active:before {
+top: -8px;
+right: -8px;
+bottom: -8px;
+left: -8px;
+}
+/*-- //new_arrivals --*/
+/*-- content --*/
+/* CSS3 Hover Effects */
+/*-- //content --*/
+/*-- easy responsive tabs style--*/
+.sap_tabs{
+clear:both;
+padding: 0em 0 0em;
+}
+.resp-tabs-list {
+text-align:center;
+list-style: none;
+margin: 0 0 3em 0;
+padding: 0;
+}
+.resp-tab-item{
+margin: 0 25px;
+padding: 0 35px 25px 35px;
+text-decoration: none;
+color: #ccc;
+cursor: pointer;
+font-size: 18px;
+text-transform: uppercase;
+border-bottom: 2px solid #ccc;
+display: inline-block;
+text-align: center;
+list-style: none;
+outline: none;
+-webkit-transition: all 0.3s ease-out;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+text-transform: Capitalize;
+font-weight: 600;
+}
+.resp-tab-active,.resp-tab-item:hover{
+color: #333;
+border-bottom:2px solid #01a185;
+}
+.resp-tabs-container {
+padding: 0px;
+clear: left;
+
+}
+h2.resp-accordion {
+cursor: pointer;
+padding: 5px;
+display: none;
+}
+.resp-tab-content {
+display: none;
+}
+.product-men img {
+width: 100%;
+}
+.product-easy {
+padding: 90px 0;
+margin-top: 20px;
+
+}
+/*-- effect --*/
+.men-pro-item {
+position: relative;
+box-shadow: 0px 0px 15px 0px #D6D6D6;
+padding-bottom: 20px;
+}
+.men-thumb-item {
+position: relative;
+}
+.item-info-product {
+text-align: center;
+margin: 0;
+}
+.men-thumb-item::before {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+content: "";
+opacity: 0;
+z-index: 9;
+visibility: hidden;
+transition: all 0.5s ease-out 0s;
+}
+.men-thumb-item .pro-image-front {
+opacity: 1;
+visibility: visible;
+}
+.men-thumb-item img {
+transition: all 0.5s ease-out 0s;
+}
+.pro-image-back {
+transform: rotateY(180deg);
+opacity: 0;
+visibility: hidden;
+position: absolute;
+top: 0;
+left: 0;
+}
+.men-thumb-item img {
+transition: all 0.5s ease-out 0s;
+}
+.men-cart-pro {
+bottom: 0;
+left: 0;
+margin: auto;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+right: 0;
+text-align: center;
+top: 0;
+transition: all 0.5s ease-out 0s;
+visibility: hidden;
+z-index: 10;
+}
+.product-new-top {
+background: #868686 none repeat scroll 0 0;
+color: #fff;
+display: inline-block;
+right: 0;
+padding: 0 10px 1px;
+position: absolute;
+text-transform: lowercase;
+top: 0;
+z-index: 10;
+}
+.inner-men-cart-pro {
+height: 100%;
+position: relative;
+width: 100%;
+transition: all 0.5s ease-out 0s;
+}
+.inner-men-cart-pro ul {
+left: 0;
+margin: -60px 0 0;
+padding: 0;
+position: absolute;
+top: 45%;
+width: 100%;
+transition: all 0.5s ease-out 0s;
+}
+.inner-men-cart-pro .link-product-add-cart {
+width: 100%;
+bottom: -40px;
+left: 0;
+position: absolute;
+transition: all 0.5s ease-out 0s;
+}
+.link-product-add-cart {
+background:#000 none repeat scroll 0 0;
+color: #fff;
+display: inline-block;
+height: 40px;
+line-height: 40px;
+text-transform: uppercase;
+transition: all 0.5s ease-out 0s;
+}
+.inner-men-cart-pro > ul > li {
+display: inline-block;
+}
+.inner-men-cart-pro ul li a {
+color: #fff;
+transition: all 0.5s ease-out 0s;
+display: block;
+width: 40px;
+height: 40px;
+text-align: center;
+}
+.men-thumb-item:hover {
+cursor: pointer;
+}
+.men-thumb-item:hover::before {
+opacity: 1;
+visibility: visible;
+}
+.men-thumb-item:hover .pro-image-front {
+transform: rotateY(180deg);
+opacity: 0;
+visibility: hidden;
+}
+.men-thumb-item:hover .pro-image-back {
+transform: rotateY(0deg);
+opacity: 1;
+visibility: visible;
+background: #f7f7f7;
+}
+.men-thumb-item img {
+transition: all 0.5s ease-out 0s;
+padding: 52px 50px 20px;
+}
+.men-thumb-item:hover .men-cart-pro {
+opacity: 1;
+visibility: visible;
+}
+.men-thumb-item:hover .inner-men-cart-pro ul {
+margin: 20px 0 0;
+}
+.inner-men-cart-pro ul li a:hover {
+background: #ffc229 none repeat scroll 0 0;
+}
+.inner-men-cart-pro .link-product-add-cart {
+width: 100%;
+top: 0;
+left: 0;
+position: absolute;
+transition: all 0.5s ease-out 0s;
+}
+.men-thumb-item:hover .inner-men-cart-pro .link-product-add-cart {
+top: 83.5%;
+}
+.link-product-add-cart:hover {
+background: #FDA30E none repeat scroll 0 0;
+color: #fff;
+}
+/*-- //effect --*/
+.item-info-product h4 a {
+font-size: 18px;
+color: #01a185;
+text-decoration:none;
+}
+.info-product-price {
+margin: 8px 0 15px 0;
+}
+.info-product-price span {
+color: #000;
+font-size: 23px;
+}
+.info-product-price del {
+color: #A7A7A7;
+margin-left: 10px;
+}
+.yes-marg{
+margin-top:30px;
+}
+a.single-item{
+color:#fff;
+font-size: 16px;
+padding: 3px 14px;
+text-decoration:none;
+}
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+
+
+@-webkit-keyframes webkit-adjacent-element-selector-bugfix
+{
+from
+{
+padding: 0;
+}
+to
+{
+padding: 0;
+}
+}
+}
+/*-- //check out --*/
+/*-- responsive media queries --*/
+@media (max-width: 1440px){
+
+}
+@media (max-width: 1366px){
+
+}
+@media (max-width: 1280px){
+
+
+
+}
+@media (max-width: 1080px){
+
+
+a.menu__link {
+font-size: 13px;
+}
+
+
+
+
+
+
+
+.men-thumb-item img {
+padding: 29px 20px 11px;
+}
+.item-info-product h4 a {
+font-size: 17px;
+}
+.product-men {
+padding: 0 10px;
+}
+
+
+
+}
+@media (max-width: 1024px){
+.info-product-price span {
+font-size: 20px;
+}
+
+}
+@media (max-width: 991px){
+
+
+
+
+
+a.menu__link {
+font-size: 12px;
+}
+
+
+.product-men {
+float: left;
+width: 33.333%;
+margin: 25px 0 0;
+}
+.resp-tabs-list {
+margin: 0 0 1em 0;
+}
+
+
+
+
+}
+@media (max-width: 800px){
+
+
+
+.hvr-outline-out:before {
+border: #FDA30E solid 2px;
+}
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+top: -6px;
+right: -6px;
+bottom: -6px;
+left: -6px;
+}
+.resp-tab-item {
+margin: 0 13px;
+padding: 0 11px 14px 11px;
+}
+
+
+
+}
+@media (max-width: 768px){
+}
+@media (max-width: 767px){
+}
+@media (max-width: 667px){
+
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+top: -8px;
+right: -8px;
+bottom: -8px;
+left: -8px;
+}
+.hvr-outline-out:before {
+border: #FDA30E solid 4px;
+}
+
+
+.men-thumb-item:hover .inner-men-cart-pro .link-product-add-cart {
+top: 80.5%;
+}
+
+
+.item-info-product h4 a {
+font-size: 15px;
+}
+
+
+}
+@media (max-width: 640px){
+
+a.menu__link {
+font-size: 13px;
+}
+
+.info-product-price span {
+font-size: 18px;
+}
+}
+@media (max-width: 600px){
+
+
+.product-men {
+float: left;
+width: 33.333%;
+padding:0 5px ;
+}
+
+.item-info-product h4 a {
+font-size: 19px;
+}
+
+
+.item-info-product h4 a {
+font-size: 14px;
+}
+.product-men {
+margin: 18px 0 0;
+}
+
+}
+@media (max-width: 568px){
+
+
+}
+@media (max-width: 480px){
+
+
+
+.product-men {
+float: left;
+width: 50%;
+padding: 0 5px;
+}
+
+
+
+.resp-tab-item {
+margin: 0 5px;
+padding: 0 5px 8px 5px;
+font-size: 16px;
+}
+
+
+.resp-tab-item {
+margin: 0 9px;
+}
+.product-men {
+float: none;
+width: 57%;
+padding: 0 5px;
+margin: 30px auto 0;
+}
+.men-thumb-item:hover .inner-men-cart-pro .link-product-add-cart {
+top: 84.5%;
+}
+.item-info-product h4 a {
+font-size: 19px;
+}
+
+}
+@media (max-width: 414px){
+
+.resp-tab-item {
+font-size: 14px;
+}
+.product-men {
+float: none;
+width: 65%;
+}
+
+}
+@media (max-width: 384px){
+
+
+.resp-tab-item {
+margin: 0 5px;
+}
+.product-men {
+float: none;
+width: 74%;
+}
+}
+@media (max-width: 375px){
+
+}
+@media (max-width: 320px){
+
+.resp-tab-item {
+padding: 0 3px 5px 3px;
+font-size: 13px;
+margin: 0 2px;
+}
+.product-men {
+float: none;
+width: 100%;
+}
+.product-easy {
+padding: 32px 0;
+}
+.men-thumb-item:hover .inner-men-cart-pro .link-product-add-cart {
+top: 86.5%;
+}
+
+
+
+
+.product-men {
+padding: 0;
+}
+
+
+}
+/*-- //responsive media queries --*/
+
+.sale-box1 {
+    height: 100px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100px;
+}
+.sale-box1 span.on_sale {
+    font-family: 'Lato', sans-serif;
+    background: #7DB122;
+    color: #FFF;
+    display: block;
+    left: -35px;
+    font-size: 1em;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    top: 23px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 140px;
+    z-index: 2;
+    text-transform:uppercase;
+    border-bottom: 2px solid #6B9C15;
+}
+
+/* ------------------------------------------------------------------ */
+
+.star-rating {
+  font-family: 'FontAwesome';
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+}
+.star-rating > fieldset {
+  border: none;
+  display: inline-block;
+  margin-left: 0;
+}
+.star-rating > fieldset:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+.star-rating > fieldset:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 .05em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 100%;
+  /* color: #16a085; */
+  color: #FDA30E;
+}
+.star-rating > fieldset:not(:checked) > label:before {
+  content: '\f006  ';
+}
+.star-rating > fieldset:not(:checked) > label:hover,
+.star-rating > fieldset:not(:checked) > label:hover ~ label {
+  /* color: #1abc9c; */
+  /* text-shadow: 0 0 3px #1abc9c; */
+  color: #FDA30E;
+}
+.star-rating > fieldset:not(:checked) > label:hover:before,
+.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
+  content: '\f005  ';
+}
+.star-rating > fieldset > input:checked ~ label:before {
+  content: '\f005  ';
+}
+.star-rating > fieldset > label:active {
+  position: relative;
+  top: 2px;
+}
+
+
+/* ---------------------------------------------------------------- */
+.div-of-like-button{
+    display: inline-block;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 8px;
+}
+
+.middle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* width: 100%; */
+  /* height: 95vh; */
+}
+
+.like-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  /* width: 50%; */
+}
+
+a.like-button{
+    text-decoration: none;
+}
+
+.like-button {
+  border: 2px solid #c7c7c7;
+  border-radius: 40px;
+  padding: .45rem .75rem;
+  color: #878787;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  -webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.like-button.liked {
+  text-decoration: none;
+  color: #ff6e6f;
+  border-color: currentColor;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.like-button:hover {
+    border-color: currentColor;
+}
+
+.like-icon {
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  margin-right: .25em;
+  font-size: 1.5rem;
+  background: url("http://share.wojtek.im/ajKY+") no-repeat center;
+  background-size: 100%;
+  -webkit-animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartUnlike 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.liked .like-icon {
+  -webkit-animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartPulse 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon [class^="heart-animation-"] {
+  background: url("http://share.wojtek.im/ajKY+") no-repeat center;
+  background-size: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 14px;
+  opacity: 0;
+}
+.liked .like-icon [class^="heart-animation-"]::before, .liked .like-icon [class^="heart-animation-"]::after {
+  content: '';
+  background: inherit;
+  background-size: 100%;
+  width: inherit;
+  height: inherit;
+  display: inherit;
+  position: relative;
+  top: inherit;
+  left: inherit;
+  opacity: 0;
+}
+.liked .like-icon .heart-animation-1 {
+  -webkit-animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatMain-1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-1::before, .liked .like-icon .heart-animation-1::after {
+  width: 12px;
+  height: 10px;
+  visibility: hidden;
+}
+.liked .like-icon .heart-animation-1::before {
+  opacity: .6;
+  -webkit-animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-1 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-1::after {
+  -webkit-animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-2 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .75;
+}
+.liked .like-icon .heart-animation-2 {
+  -webkit-animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatMain-2 1s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+.liked .like-icon .heart-animation-2::before, .liked .like-icon .heart-animation-2::after {
+  width: 5px;
+  height: 4px;
+  visibility: hidden;
+}
+.liked .like-icon .heart-animation-2::before {
+  -webkit-animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-3 1s 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .25;
+}
+.liked .like-icon .heart-animation-2::after {
+  -webkit-animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: heartFloatSub-4 1s 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  opacity: .4;
+}
+
+@-webkit-keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes heartPulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@-webkit-keyframes heartUnlike {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+@keyframes heartUnlike {
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+@-webkit-keyframes heartFloatMain-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg);
+  }
+}
+@keyframes heartFloatMain-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, -25px) rotate(-20deg);
+            transform: translate(0, -25px) rotate(-20deg);
+  }
+}
+@-webkit-keyframes heartFloatMain-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0);
+  }
+  50% {
+    opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1);
+  }
+}
+@keyframes heartFloatMain-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0) rotate(0) scale(0);
+            transform: translate(0) rotate(0) scale(0);
+  }
+  50% {
+    opacity: .9;
+    -webkit-transform: translate(-10px, -38px) rotate(25deg) scale(1);
+            transform: translate(-10px, -38px) rotate(25deg) scale(1);
+  }
+}
+@-webkit-keyframes heartFloatSub-1 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg);
+  }
+}
+@keyframes heartFloatSub-1 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(13px, -13px) rotate(30deg);
+            transform: translate(13px, -13px) rotate(30deg);
+  }
+}
+@-webkit-keyframes heartFloatSub-2 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg);
+  }
+}
+@keyframes heartFloatSub-2 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(18px, -10px) rotate(55deg);
+            transform: translate(18px, -10px) rotate(55deg);
+  }
+}
+@-webkit-keyframes heartFloatSub-3 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(-50px, 0);
+            transform: translate(-50px, 0);
+  }
+}
+@keyframes heartFloatSub-3 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(-10px, -10px) rotate(-40deg);
+            transform: translate(-10px, -10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(-50px, 0);
+            transform: translate(-50px, 0);
+  }
+}
+@-webkit-keyframes heartFloatSub-4 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg);
+  }
+}
+@keyframes heartFloatSub-4 {
+  0% {
+    visibility: hidden;
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+  50% {
+    visibility: visible;
+    -webkit-transform: translate(2px, -18px) rotate(-25deg);
+            transform: translate(2px, -18px) rotate(-25deg);
+  }
 }
