@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/styleDetailProduct.css" type="text/css">
+	
+	
+	<link rel="stylesheet" href="assets/css/etalage-productdetail.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/form-productdetail.css" style="text/css">
+	<!-- <link rel="stylesheet" href="assets/css/animate.min.css"> -->
+	<script src="assets/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+	</script>
+	<script src="assets/js/jquery.etalage.min.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+
+			$('#etalage').etalage({
+				thumb_image_width: 300,
+				thumb_image_height: 400,
+				
+				show_hint: true,
+				click_callback: function(image_anchor, instance_id){
+					alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="body-page">
+<div class="header_1">
+	<div class="top-header navbar navbar-default"><!--header-one-->
+		<div class="container">
+			<div class="nav navbar-nav wow fadeInLeft animated" data-wow-delay=".5s">
+				<p>Welcome to Modern Shoppe <a href="register.html">Register </a> Or <a href="signin.html">Sign In </a></p>
+			</div>
+			<div class="nav navbar-nav navbar-right social-icons wow fadeInRight animated" data-wow-delay=".5s">
+				<ul>
+					<li><a href="#"> </a></li>
+					<li><a href="#" class="pin"> </a></li>
+					<li><a href="#" class="in"> </a></li>
+					<li><a href="#" class="be"> </a></li>
+					<li><a href="#" class="you"> </a></li>
+					<li><a href="#" class="vimeo"> </a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="header-two navbar navbar-default"><!--header-two-->
+		<div class="container">
+			<div class="nav navbar-nav header-two-left" style="margin-left: 0px">
+				&nbsp;
+			</div>
+			<div class="nav navbar-nav logo wow zoomIn animated" data-wow-delay=".7s">
+				<h1><a href="index.html">Auction <b>Website</b><span class="tag">Everything for your life! </span> </a></h1>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+
+<div class="header_2">
+	<div class="container">
+		<div class="head-top">
+			<div class="col-sm-8 col-md-offset-2 h_menu4">
+				<nav class="navbar nav_bottom" role="navigation">	
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header nav_2">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						
+					</div>
+					<!-- Collect the nav links, forms, an other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+						<ul class="nav navbar-nav nav_1">
+							<li><a class="color" href="index.html">Home</a></li>
+							
+							<li class="dropdown mega-dropdown active">
+								<a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Điện thoại<span class="caret" style="margin-left: 15px"></span></a>
+								<div class="dropdown-menu ">
+									<div class="menu-top">
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Apple</h4>
+												<ul>
+													<li><a href="#">Iphone 7</a></li>
+													<li><a href="#">Iphone 7 Plus</a></li>
+													<li><a href="#">Iphone 6s</a></li>
+													<li><a href="#">Iphone 6s Plus</a></li>
+													<li><a href="#">Iphone 6 & 6 Plus</a></li>
+													<li><a href="#">Iphone 5S & 5 SE</a></li>
+													<li><a href="#">Xem thêm..</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Samsung</h4>
+												<ul>
+													<li><a href="#">Samsung Galaxy Note</a></li>
+													<li><a href="#">Samsung Galaxy S</a></li>
+													<li><a href="#">Samsung Galaxy A</a></li>
+													<li><a href="#">Samsung Galaxy J</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Sony</h4>
+												<ul>
+													<li><a href="#">Sony Xperia Z</a></li>
+													<li><a href="#">Sony Xperia X</a></li>
+													<li><a href="#">Sony Xperia M</a></li>
+													<li><a href="#">Sony Xparia C</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Các hãng khác</h4>
+												<ul>
+													<li><a href="#">Oppo</a></li>
+													<li><a href="#">HTC</a></li>
+													<li><a href="#">ASUS</a></li>
+													<li><a href="#">Nokia</a></li>
+													<li><a href="#">Xiaomi</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+												
+											</div>
+										</div>
+										<div class="col1 col5">
+											<img src="assets/img/cellphone.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown mega-dropdown active">
+								<a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Đồ điện tử<span class="caret" style="margin-left: 15px"></span></a>
+								<div class="dropdown-menu mega-dropdown-menu">
+									<div class="menu-top">
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Máy tính & Phụ kiện</h4>
+												<ul>
+													<li><a href="#">Desktops</a></li>
+													<li><a href="#">Laptops & Tablet</a></li>
+													<li><a href="#">Monitors</a></li>
+													<li><a href="#">Networking</a></li>
+													<li><a href="#">PC Gaming</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>TV, Audio</h4>
+												<ul>
+													<li><a href="#">LED & LCD TVs</a></li>
+													<li><a href="#">OLED TVs</a></li>
+													<li><a href="#">Smart TVs</a></li>
+													<li><a href="#">Phụ kiện Audio & Video</a></li>
+													<li><a href="#">Streaming Media Players</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Nhạc cụ</h4>
+												
+												<ul>
+													<li><a href="#">Guitars</a></li>
+													<li><a href="#">Bass</a></li>
+													<li><a href="#">Keyboard</a></li>
+													<li><a href="#">Sweatpants</a></li>
+													<li><a href="#">DJ & Lighting</a></li>
+													<li><a href="#">Xem thêm..</a></li>
+													
+												</ul>
+												
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Danh mục khác</h4>
+												<ul>
+													<li><a href="#">Video Games</a></li>
+													<li><a href="#">Phần mềm</a></li>
+													<li><a href="#">Portable Audio</a></li>
+													<li><a href="#">Business & Office Electronics</a></li>
+													<li><a href="#">Camera, Photo & Video</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1 col5">
+											<img src="assets/img/elec.jpg" class="img-responsive" alt="">
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown mega-dropdown active">
+								<a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Xe ôtô<span class="caret" style="margin-left: 15px"></span></a>
+								<div class="dropdown-menu mega-dropdown-menu">
+									<div class="menu-top">
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Chevrolet</h4>
+												<ul>
+													<li><a href="#">Aveo</a></li>
+													<li><a href="#">Captiva</a></li>
+													<li><a href="#">Captiva Sport</a></li>
+													<li><a href="#">Colorado</a></li>
+													<li><a href="#">Cruze</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>BMW</h4>
+												<ul>
+													<li><a href="#">116i</a></li>
+													<li><a href="#">118i</a></li>
+													<li><a href="#">320i</a></li>
+													<li><a href="#">320i Gran Turismo</a></li>
+													<li><a href="#">325i</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Ford</h4>
+												<ul>
+													<li><a href="#">Ecosport</a></li>
+													<li><a href="#">Escape</a></li>
+													<li><a href="#">Everest</a></li>
+													<li><a href="#">Explorer</a></li>
+													<li><a href="#">F-150</a></li>
+													<li><a href="#">Xem thêm..</a></li>
+													
+												</ul>
+												
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Hãng xe khác</h4>
+												<ul>
+													<li><a href="#">Ferrari</a></li>
+													<li><a href="#">Honda</a></li>
+													<li><a href="#">Huyndai</a></li>
+													<li><a href="#">Cadillac</a></li>
+													<li><a href="#">Bentley</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown mega-dropdown active">
+								<a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Xe máy<span class="caret" style="margin-left: 15px"></span></a>
+								<div class="dropdown-menu mega-dropdown-menu">
+									<div class="menu-top">
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Yamaha</h4>
+												<ul>
+													<li><a href="#">125 ZR</a></li>
+													<li><a href="#">Exciter</a></li>
+													<li><a href="#">Jupiter</a></li>
+													<li><a href="#">Nouvo</a></li>
+													<li><a href="#">Sirius</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Suzuki</h4>
+												<ul>
+													<li><a href="#">Axelo</a></li>
+													<li><a href="#">Raider</a></li>
+													<li><a href="#">Viva</a></li>
+													<li><a href="#">Hayate</a></li>
+													<li><a href="#">Satria</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Honda</h4>
+												<ul>
+													<li><a href="#">Airblade</a></li>
+													<li><a href="#">Dream</a></li>
+													<li><a href="#">Chaly</a></li>
+													<li><a href="#">Lead</a></li>
+													<li><a href="#">Future</a></li>
+													<li><a href="#">Xem thêm..</a></li>
+													
+												</ul>
+												
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Hãng xe khác</h4>
+												<ul>
+													<li><a href="#">Piaggio</a></li>
+													<li><a href="#">BMW</a></li>
+													<li><a href="#">Ducati</a></li>
+													<li><a href="#">Kawasaki</a></li>
+													<li><a href="#">RebelUSA</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown mega-dropdown active">
+								<a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Thời trang<span class="caret" style="margin-left: 15px"></span></a>
+								<div class="dropdown-menu mega-dropdown-menu">
+									<div class="menu-top">
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Thời trang nam</h4>
+												<ul>
+													<li><a href="#">Áo thun</a></li>
+													<li><a href="#">Áo sơ mi</a></li>
+													<li><a href="#">Áo khoác</a></li>
+													<li><a href="#">Áo len & Cardian nam</a></li>
+													<li><a href="#">Quần short</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Phụ kiện nam</h4>
+												<ul>
+													<li><a href="#">Ba lô</a></li>
+													<li><a href="#">Cặp chéo</a></li>
+													<li><a href="#">Ví</a></li>
+													<li><a href="#">Giày</a></li>
+													<li><a href="#">Cà vạt</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Thời trang nữ</h4>
+												<ul>
+													<li><a href="#">Áo khoác nữ</a></li>
+													<li><a href="#">Áo thun & Áo kiểu nữ</a></li>
+													<li><a href="#">Quần jean</a></li>
+													<li><a href="#">Quần lót & đồ ngủ</a></li>
+													<li><a href="#">Đầm nữ</a></li>
+													<li><a href="#">Xem thêm..</a></li>
+													
+												</ul>
+												
+											</div>
+										</div>
+										<div class="col1">
+											<div class="h_nav">
+												<h4>Phụ kiện nữ</h4>
+												<ul>
+													<li><a href="#">Giày nữ</a></li>
+													<li><a href="#">Túi xách</a></li>
+													<li><a href="#">Kính</a></li>
+													<li><a href="#">Đồng hồ</a></li>
+													<li><a href="#">Vòng tay & nhẫn</a></li>
+													<li><a href="#">Xem thêm...</a></li>
+												</ul>
+											</div>
+										</div>
+										
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+			<div class="col-sm-2 search-right">
+				<ul class="heart">
+					<li>
+						<a href="wishlist.html" >
+							<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+						</a>
+					</li>
+					<li>
+						<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i></a>
+					</li>
+				</ul>
+				<div class="cart box_1">
+					<a href="checkout.html">
+						<h3> <div class="total">
+							<span class="simpleCart_total"></span></div>
+							<img src="assets/img/cart.png" alt=""/>
+							</h3>
+						</a>
+						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="single">
+	<div class="wrap">
+			<div class="cont span_2_of_3">
+				<div class="labout span_1_of_a1">
+					<!-- start product_slider -->
+					<ul id="etalage">
+						<li>
+							<img class="etalage_thumb_image" src="assets/img/bthunter1.jpg" />
+							<img class="etalage_source_image" src="assets/img/bthunter1.jpg" />
+						</li>
+						<li>
+							<img class="etalage_thumb_image" src="assets/img/bthunter2.jpg" />
+							<img class="etalage_source_image" src="assets/img/bthunter2.jpg" />
+						</li>
+						<li>
+							<img class="etalage_thumb_image" src="assets/img/bthunter4.jpg" />
+							<img class="etalage_source_image" src="assets/img/bthunter4.jpg" />
+						</li>
+						
+					</ul>
+					
+					
+					<!-- end product_slider -->
+				</div>
+				<div class="cont1 span_2_of_a1">
+					<h3 class="m_3">Giày thể thao cao cấp nam Hunter Biti's DSM064233DEN (Đen)</h3>
+					
+					<div class="price_single">
+						<span class="reducedfrom">$66.00</span>
+						<span class="actual">$12.00</span><a href="#">click for offer</a>
+					</div>
+					
+					<div class="btn_form">
+						<form>
+							<input type="submit" value="buy now" title="">
+						</form>
+					</div>
+					<ul class="add-to-links">
+						<li><img src="assets/img/wish.png" alt=""/><a href="#">Add to wishlist</a></li>
+					</ul>
+					<p class="m_desc">Giày thể thao cao cấp nam Hunter Biti's DSW053333DEN được thiết kể kiểu dáng năng động, trẻ trung với chất liệu vượt trội. Với đế phylon cao cấp đàn hồi tốt, Hunter đảm bảo đem đến cảm giác êm nhẹ, lướt đi trong từng bước chuyển động. Đế tiếp đất từ chất liệu cao su cao cấp được thiết kế rãnh ngang tăng độ bám khi di chuyển trên mọi địa hình. Lớp lưới Air Mesh thông thoáng và siêu nhẹ, tạo cảm giác mát mẻ cho đôi chân và ngăn chặn tình trạng ẩm ướt khó chịu khi hoạt động trong thời gian dài.</p>
+					
+					<div class="social_single">
+						<ul>
+							<li class="fb"><a href="#"><span> </span></a></li>
+							<li class="tw"><a href="#"><span> </span></a></li>
+							<li class="g_plus"><a href="#"><span> </span></a></li>
+							<li class="rss"><a href="#"><span> </span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+				
+				
+				<ul id="flexiselDemo3">
+					<li><img src="assets/img/gn1.jpg" /><div class="grid-flex"><a href="#">Bloch</a><p>Rs 850</p></div></li>
+					<li><img src="assets/img/gn2.jpg" /><div class="grid-flex"><a href="#">Capzio</a><p>Rs 850</p></div></li>
+					<li><img src="assets/img/gn3.jpg" /><div class="grid-flex"><a href="#">Zumba</a><p>Rs 850</p></div></li>
+					<li><img src="assets/img/gn4.jpg" /><div class="grid-flex"><a href="#">Bloch</a><p>Rs 850</p></div></li>
+					<li><img src="assets/img/gn5.jpg" /><div class="grid-flex"><a href="#">Capzio</a><p>Rs 850</p></div></li>
+				</ul>
+				<script type="text/javascript">
+					$(window).on('load', function() {
+						$("#flexiselDemo3").flexisel({
+							visibleItems: 5,
+							animationSpeed: 1000,
+							autoPlay: true,
+									autoPlaySpeed: 3000,
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+						responsiveBreakpoints: {
+							portrait: {
+								changePoint:480,
+								visibleItems: 1
+							},
+							landscape: {
+								changePoint:640,
+								visibleItems: 2
+							},
+							tablet: {
+								changePoint:768,
+								visibleItems: 3
+							}
+						}
+					});
+					
+					});
+				</script>
+				<script type="text/javascript" src="assets/js/jquery.flexisel.js"></script>
+				<div class="toogle">
+					<h3 class="m_3">Product Details</h3>
+					<p class="m_text">
+						<table class="table table-bordered">
+							<tr>
+								<td>SKU</td>
+								<td>BI477FAAA20MH3VNAMZ-3433327</td>
+							</tr>
+							<tr>
+								<td>Mẫu mã</td>
+								<td>DSW053333DEN</td>
+							</tr>
+							<tr>
+								<td>Kích thước sản phẩm (D x R x C cm)</td>
+								<td>32x11x12.5</td>
+							</tr>
+							<tr>
+								<td>Trọng lượng (KG)</td>
+								<td>0.23</td>
+							</tr>
+							<tr>
+								<td>Sản xuất tại</td>
+								<td>Việt Nam</td>
+							</tr>
+							<tr>
+								<td>Thời gian bảo hành</td>
+								<td>3 tháng</td>
+							</tr>
+							<tr>
+								<td>Loại hình bảo hành</td>
+								<td>Bằng Phiếu bảo hành và Hóa đơn</td>
+							</tr>
+						</table>
+					</p>
+				</div>
+				<div class="toogle">
+					<h3 class="m_3">Product Reviews</h3>
+					<p class="m_text">Giày thể thao cao cấp nam Hunter Biti's DSW053333DEN được thiết kể kiểu dáng năng động, trẻ trung với chất liệu vượt trội. Với đế phylon cao cấp đàn hồi tốt, Hunter đảm bảo đem đến cảm giác êm nhẹ, lướt đi trong từng bước chuyển động. Đế tiếp đất từ chất liệu cao su cao cấp được thiết kế rãnh ngang tăng độ bám khi di chuyển trên mọi địa hình. Lớp lưới Air Mesh thông thoáng và siêu nhẹ, tạo cảm giác mát mẻ cho đôi chân và ngăn chặn tình trạng ẩm ướt khó chịu khi hoạt động trong thời gian dài.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<div class="footer-page">
+	<div class="footer-top">
+		<div class="container">
+			<div class="foo-grids">
+				<div class="col-md-3 footer-grid">
+					<h4 class="footer-head">Giới thiệu</h4>
+					<p>Hello World.</p>
+					<p>This is auction website.</p>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h4 class="footer-head">Hỗ trợ</h4>
+					<ul>
+						<li><a href="faq.html">Câu hỏi thường gặp</a></li>
+						<li><a href="feedback.html">Phản hồi</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h4 class="footer-head">Thông tin</h4>
+					<ul>
+						<li><a href="regions.html">Vị trí trên bản đồ</a></li>
+						<li><a href="terms.html">Phạm vi sử dụng</a></li>
+						<li><a href="popular-search.html">Popular searches</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h4 class="footer-head">Contact Us</h4>
+					<address>
+						<ul class="location">
+							<li><span class="glyphicon glyphicon-map-marker"></span></li>
+							<li>316 Phạm Văn Đồng, TP HCM</li>
+							<div class="clearfix"></div>
+						</ul>
+						<ul class="location">
+							<li><span class="glyphicon glyphicon-earphone"></span></li>
+							<li>0914 xxx xxx</li>
+							<div class="clearfix"></div>
+						</ul>
+						<ul class="location">
+							<li><span class="glyphicon glyphicon-envelope"></span></li>
+							<li><a href="mailto:info@example.com">abc@xyz.com</a></li>
+							<div class="clearfix"></div>
+						</ul>
+					</address>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom text-center">
+		<div class="container">
+			<div class="footer-social-icons">
+				<ul>
+					<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+					<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+					<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+				</ul>
+			</div>
+			<div class="copyrights">
+				<p> © All Rights Reserved</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
